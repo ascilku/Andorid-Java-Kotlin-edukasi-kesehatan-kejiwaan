@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EdukasiKesehatanKejiwaan</string>
+    <string name="edukasi_kesehatan_mental_remaja">Edukasi Kesehatan Mental Remaja</string>
+    <string name="calender_mood">Calender mood</string>
+    <string name="artikel_kesehatan">Artikel kesehatan</string>
+    <string name="konsultasi">Konsultasi</string>
+    <string name="telepon_bantuan">Telepon bantuan</string>
 </resources>

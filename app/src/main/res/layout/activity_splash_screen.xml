@@ -2,13 +2,17 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FF0A5A24"
+    android:background="#FFFFE3D2"
     android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".SplashScren">
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="270dp"
-        android:src="@color/black"
-        android:layout_marginTop="-50dp"
-        android:layout_height="400dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="250dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="-80dp"
+        android:text="@string/edukasi_kesehatan_mental_remaja"
+        android:layout_height="wrap_content"/>
 </androidx.appcompat.widget.LinearLayoutCompat>
