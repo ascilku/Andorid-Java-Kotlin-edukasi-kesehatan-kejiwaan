@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/drawable/bg_item.xml" value="0.2611111111111111" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/drawable/bg_text_content.xml" value="0.2611111111111111" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/drawable/ic_back.xml" value="0.2611111111111111" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/activity_biodata.xml" value="0.1793478260869565" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/activity_calender.xml" value="0.2" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/activity_content_mood.xml" value="0.1793478260869565" />
         <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/item_mood.xml" value="0.1793478260869565" />
+        <entry key="..\:/EdukasiKesehatanKejiwaan/app/src/main/res/layout/progress.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>

@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKesehatanKejiwaan">
         <activity
+            android:name=".calender.DetailMoodActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BiodataActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".calender.ContentMoodActivity"
+            android:exported="true" />
+        <activity
             android:name=".teleponBantuan.TeleponBantuanActivity"
             android:exported="true" />
         <activity
@@ -23,13 +38,7 @@
             android:exported="true" />
         <activity
             android:name=".SplashScren"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

@@ -5,4 +5,9 @@
     <string name="artikel_kesehatan">Artikel kesehatan</string>
     <string name="konsultasi">Konsultasi</string>
     <string name="telepon_bantuan">Telepon bantuan</string>
+    <string name="add">Pilih tanggal</string>
+    <string name="apa_kabar_kamu_hari_ini">Apa kabar kamu hari ini?</string>
+    <string name="sedang_memproses">sedang memproses</string>
+    <string name="masukkan_nama">Masukkan email</string>
+    <string name="masuk">Masuk</string>
 </resources>

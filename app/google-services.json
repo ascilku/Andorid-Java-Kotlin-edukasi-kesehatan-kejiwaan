@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "395186624322",
+    "project_id": "edukasikesehatankejiwaan",
+    "storage_bucket": "edukasikesehatankejiwaan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395186624322:android:36e9e369eafb898ca79adb",
+        "android_client_info": {
+          "package_name": "com.example.edukasikesehatankejiwaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395186624322-9db38ctjguqjjqlfnmtd4cb6g6vo44nn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.edukasikesehatankejiwaan",
+            "certificate_hash": "eafb04245f656097640e0404de2bfd3cd1525388"
+          }
+        },
+        {
+          "client_id": "395186624322-j7r47hu4n668qrs42j6jvg09c0cg9rv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnQht5-n6qFpbOL21EXI7tO4CkAN5IagU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395186624322-j7r47hu4n668qrs42j6jvg09c0cg9rv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

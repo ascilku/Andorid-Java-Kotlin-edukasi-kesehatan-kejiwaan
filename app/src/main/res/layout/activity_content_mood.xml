@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    tools:context=".calender.ContentMoodActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dp"
+        android:layout_height="55dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="25dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="35dp"
+            android:id="@+id/imgBack"
+            android:src="@drawable/ic_back"
+            android:layout_height="35dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:text="@string/calender_mood"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:text="@string/apa_kabar_kamu_hari_ini"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_text_content"
+        android:layout_height="320dp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="350dp"
+            android:maxLines="30"
+            android:lines="30"
+            android:padding="5dp"
+            android:id="@+id/edtMood"
+            android:gravity="start"
+            android:maxLength="1000"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgSatu"
+            android:layout_margin="10dp"
+            android:src="@drawable/mukasatu"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgDua"
+            android:layout_margin="10dp"
+            android:src="@drawable/mukadua"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgTiga"
+            android:layout_margin="10dp"
+            android:src="@drawable/mukatiga"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgEmpat"
+            android:layout_margin="10dp"
+            android:src="@drawable/mukaempat"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
