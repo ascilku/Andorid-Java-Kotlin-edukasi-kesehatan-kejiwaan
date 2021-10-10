@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/teal_200"
-    tools:context=".calender.CalenderActivity">
-
+    android:layout_height="match_parent"
+    tools:context=".konsul.psikiater.PsikiaterActivity">
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -24,43 +23,17 @@
             android:layout_height="35dp"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
-            android:text="@string/calender_mood"
+            android:text="@string/psikiater"
             android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:gravity="end"
             android:layout_height="wrap_content"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="15dp"
-        android:gravity="center"
-        android:padding="10dp"
-        android:background="@drawable/bg_text_content"
-        android:layout_height="wrap_content">
-        <DatePicker
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:datePickerMode="spinner"
-            android:calendarViewShown="false"
-            tools:targetApi="lollipop" />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="100dp"
-            android:text="@string/add"
-            android:id="@+id/addCalender"
-            android:textColor="#FFFFFF"
-            android:textAllCaps="false"
-            android:background="@color/teal_700"
-            android:layout_height="40dp"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_margin="15dp"
-        app:reverseLayout="true"
-        android:id="@+id/rvClender"
-        android:layout_height="wrap_content"/>
-
+        android:id="@+id/rView"
+        android:layout_height="match_parent"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

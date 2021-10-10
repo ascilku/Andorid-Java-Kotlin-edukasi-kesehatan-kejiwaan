@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKesehatanKejiwaan">
         <activity
+            android:name=".konsul.rumahsakit.DetailRumahSakitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.puskesmas.DetailPuskesmasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.psikolog.DetailPsikologActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.psikiater.DetailPsikiaterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.psikiater.PsikiaterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.psikolog.PsikologActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.rumahsakit.RumahSakitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".konsul.puskesmas.PuskesmasActivity"
+            android:exported="true" />
+        <activity
             android:name=".calender.DetailMoodActivity"
             android:exported="true" />
         <activity
@@ -38,7 +62,7 @@
             android:exported="true" />
         <activity
             android:name=".SplashScren"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

@@ -10,4 +10,13 @@
     <string name="sedang_memproses">sedang memproses</string>
     <string name="masukkan_nama">Masukkan email</string>
     <string name="masuk">Masuk</string>
+    <string name="telpon_bantuan">Telpon Bantuan</string>
+    <string name="suicide_call">Suicide Call</string>
+    <string name="polisi">Polisi</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="puskesmas">Puskesmas</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+    <string name="spesialis">Spesialis</string>
+    <string name="psikiater">Psikiater</string>
+    <string name="psikolog">Psikolog</string>
 </resources>

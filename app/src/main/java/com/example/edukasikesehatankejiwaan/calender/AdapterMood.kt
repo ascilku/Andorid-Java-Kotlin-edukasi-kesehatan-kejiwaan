@@ -9,9 +9,9 @@ import com.example.edukasikesehatankejiwaan.model.Mood
 
 class AdapterMood(val listMood : List<Mood>,
 val onClick : (Mood) -> Unit)
-: RecyclerView.Adapter<AdapterMood.PetugasHolder>() {
+: RecyclerView.Adapter<AdapterMood.MoodHolder>() {
 
-    inner class PetugasHolder(val itemPetugas : ItemMoodBinding) : RecyclerView.ViewHolder(itemPetugas.root){
+    inner class MoodHolder(val itemPetugas : ItemMoodBinding) : RecyclerView.ViewHolder(itemPetugas.root){
         fun bindPetugas(mood : Mood, onClick: (Mood) -> Unit){
             when(mood.emote){
                 "satu"->{
@@ -35,14 +35,14 @@ val onClick : (Mood) -> Unit)
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetugasHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoodHolder {
         val bind = ItemMoodBinding.inflate(
             LayoutInflater.from(parent.context)
             , parent, false)
-        return PetugasHolder(bind)
+        return MoodHolder(bind)
     }
 
-    override fun onBindViewHolder(holder: PetugasHolder, position: Int) {
+    override fun onBindViewHolder(holder: MoodHolder, position: Int) {
         holder.bindPetugas(listMood[position], onClick)
     }
 
