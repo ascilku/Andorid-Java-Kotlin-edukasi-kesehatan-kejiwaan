@@ -22,19 +22,18 @@ class TeleponBantuanActivity : AppCompatActivity() {
     private fun onClick() {
         b.sCall.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:082192759461")
+            intent.data = Uri.parse("tel:112")
             startActivity(intent)
         }
 
         b.polis.setOnClickListener {
-            val i = Intent(Intent.ACTION_DIAL)
-            i.data = Uri.parse("tel:089668848913")
-            startActivity(i)
+            startActivity(Intent(this, PolisiActivity::class.java))
+            finish()
         }
 
         b.ambulance.setOnClickListener {
             val i = Intent(Intent.ACTION_DIAL)
-            i.data = Uri.parse("tel:082192759461")
+            i.data = Uri.parse("tel:0411-118")
             startActivity(i)
         }
 

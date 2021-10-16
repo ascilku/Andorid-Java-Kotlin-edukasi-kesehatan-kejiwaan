@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.edukasikesehatankejiwaan">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EdukasiKesehatanKejiwaan">
+        <activity
+            android:name=".artikel.WebActivity"
+            android:exported="true" />
+        <activity
+            android:name=".teleponBantuan.PolisiActivity"
+            android:exported="true" />
         <activity
             android:name=".konsul.rumahsakit.DetailRumahSakitActivity"
             android:exported="true" />

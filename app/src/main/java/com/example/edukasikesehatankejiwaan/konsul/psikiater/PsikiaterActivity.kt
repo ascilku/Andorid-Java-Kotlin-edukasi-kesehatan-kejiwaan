@@ -29,8 +29,6 @@ class PsikiaterActivity : AppCompatActivity() {
         b.rView.setHasFixedSize(true)
         onItemClick()
         setData(b.rView)
-
-        onItemClick()
     }
 
     private fun setData(rView: RecyclerView) {

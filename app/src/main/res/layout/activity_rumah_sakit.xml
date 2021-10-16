@@ -32,7 +32,8 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_margin="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:id="@+id/rView"
         android:layout_height="match_parent"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

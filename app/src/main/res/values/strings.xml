@@ -11,7 +11,7 @@
     <string name="masukkan_nama">Masukkan email</string>
     <string name="masuk">Masuk</string>
     <string name="telpon_bantuan">Telpon Bantuan</string>
-    <string name="suicide_call">Suicide Call</string>
+    <string name="suicide_call">Telefon Bantuan</string>
     <string name="polisi">Polisi</string>
     <string name="ambulance">Ambulance</string>
     <string name="puskesmas">Puskesmas</string>
@@ -19,4 +19,20 @@
     <string name="spesialis">Spesialis</string>
     <string name="psikiater">Psikiater</string>
     <string name="psikolog">Psikolog</string>
+    <string name="nomer_polisi">Nomer Polisi</string>
+    <string name="polrestabes_makassar">Polrestabes Makassar</string>
+    <string name="polsek_panakukang">Polsek Panakukang</string>
+    <string name="polsek_biringkanaya">Polsek Biringkanaya</string>
+    <string name="polsek_tallo">Polsek Tallo</string>
+    <string name="polsek_tamalanrea">Polsek Tamalanrea</string>
+    <string name="polsek_manggala">Polsek Manggala</string>
+    <string name="polsek_mariso">Polsek Mariso</string>
+    <string name="polsek_makassar">Polsek Makassar</string>
+    <string name="polsek_mamajang">Polsek Mamajang</string>
+    <string name="polsek_bontoala">Polsek Bontoala</string>
+    <string name="polsek_ujung_pandang">Polsek Ujung Pandang</string>
+    <string name="polsek_ujung_tanah">Polsek Ujung Tanah</string>
+    <string name="polsek_wajo">Polsek Wajo</string>
+    <string name="polsek_soekarno_hatta">Polsek Soekarno Hatta</string>
+    <string name="polsek_paotere">Polsek Paotere</string>
 </resources>
