@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".BiodataActivity">
+    tools:context=".login.LoginActivity">
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -18,18 +18,77 @@
             android:textSize="20sp"
             android:paddingLeft="5dp"
             android:id="@+id/edtName"
+            android:visibility="gone"
             android:paddingRight="5dp"
             android:inputType="textEmailAddress"
             android:textColor="@color/black"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:id="@+id/masuk"
-        android:text="@string/masuk"
+        android:id="@+id/mSiswa"
+        android:text="Silahkan Login"
         android:textAllCaps="false"
+        android:background="@drawable/bg_login"
         android:layout_height="50dp"/>
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginLeft="25dp"-->
+<!--        android:layout_marginRight="25dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:id="@+id/mGuru"-->
+<!--        android:text="Masuk sebagai guru"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:background="@drawable/bg_login"-->
+<!--        android:layout_height="50dp"/>-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:id="@+id/daftarS"
+                android:textColor="#7A91CC"
+                android:text="@string/daftar"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/daftarG"
+                android:textColor="@color/white"
+                android:text="@string/daftar_sebagai_guru"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/daftarA"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:text="Daftar Admin"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

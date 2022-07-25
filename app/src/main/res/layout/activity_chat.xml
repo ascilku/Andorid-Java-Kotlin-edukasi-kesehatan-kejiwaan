@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal_200"
+    android:layout_height="match_parent"
+    tools:context=".chat.ListUserAct">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlsearch"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:background="@color/teal_700"
+            android:padding="10dp"
+            android:id="@+id/search"
+            android:textColorHint="@android:color/white"
+            android:hint="cari.."
+            android:drawableStart="@drawable/ic_search"
+            android:focusableInTouchMode="false"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_search" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:background="@color/teal_700"
+            android:padding="10dp"
+            android:id="@+id/m"
+            android:textColorHint="@android:color/white"
+            android:hint="Message"
+            android:focusableInTouchMode="false"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refResh"
+        android:layout_below="@id/rlsearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:reverseLayout="true"
+            app:stackFromEnd="true" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum ada pesan"
+        android:layout_centerInParent="true"
+        android:textSize="25sp"
+        android:id="@+id/txtChatBelumAda"/>
+
+</RelativeLayout>

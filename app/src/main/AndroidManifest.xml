@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.edukasikesehatankejiwaan">
+    package="com.example.edukasikesehatankejiwaan" >
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.Manifest.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +14,43 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EdukasiKesehatanKejiwaan">
+        android:theme="@style/Theme.EdukasiKesehatanKejiwaan" >
+        <activity
+            android:name=".tempat.TambahTempat"
+            android:exported="false" />
+        <activity
+            android:name=".tempat.Tempat"
+            android:exported="false" />
+        <activity
+            android:name=".lokasi.TambahLokasi"
+            android:exported="false" />
+        <activity
+            android:name=".artikelnew.Arikel"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".artikelnew.TambahArtikel"
+            android:exported="false" />
+        <activity
+            android:name=".lokasi.LokasiKonsultasi"
+            android:exported="false" />
+        <activity
+            android:name=".chat.search.SearchAct"
+            android:exported="true" />
+        <activity
+            android:name=".chat.chatUser.ListChatAct"
+            android:exported="true" />
+        <activity
+            android:name=".chat.ListUserAct"
+            android:exported="true" />
         <activity
             android:name=".artikel.WebActivity"
             android:exported="true" />
@@ -44,15 +85,6 @@
             android:name=".calender.DetailMoodActivity"
             android:exported="true" />
         <activity
-            android:name=".BiodataActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".calender.ContentMoodActivity"
             android:exported="true" />
         <activity
@@ -73,6 +105,23 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCnQht5-n6qFpbOL21EXI7tO4CkAN5IagU" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_chat" />
+
+        <service
+            android:name=".fcm.FirebaseMessanging"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

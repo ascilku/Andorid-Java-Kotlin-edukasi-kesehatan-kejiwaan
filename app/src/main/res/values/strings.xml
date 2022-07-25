@@ -3,7 +3,7 @@
     <string name="edukasi_kesehatan_mental_remaja">Edukasi Kesehatan Mental Remaja</string>
     <string name="calender_mood">Calender mood</string>
     <string name="artikel_kesehatan">Artikel kesehatan</string>
-    <string name="konsultasi">Konsultasi</string>
+    <string name="konsultasi">Lokasi Konsultasi</string>
     <string name="telepon_bantuan">Telepon bantuan</string>
     <string name="add">Pilih tanggal</string>
     <string name="apa_kabar_kamu_hari_ini">Apa kabar kamu hari ini?</string>
@@ -35,4 +35,8 @@
     <string name="polsek_wajo">Polsek Wajo</string>
     <string name="polsek_soekarno_hatta">Polsek Soekarno Hatta</string>
     <string name="polsek_paotere">Polsek Paotere</string>
+    <string name="daftar">Daftar Sebagai Siswa</string>
+    <string name="daftar_sebagai_guru">Daftar Sebagai Guru</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="email_gmail">Gmail</string>
 </resources>

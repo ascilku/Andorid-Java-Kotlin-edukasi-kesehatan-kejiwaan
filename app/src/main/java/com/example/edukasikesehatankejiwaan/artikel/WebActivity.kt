@@ -7,6 +7,7 @@ import com.example.edukasikesehatankejiwaan.R
 import com.example.edukasikesehatankejiwaan.databinding.ActivityWebBinding
 import android.webkit.WebViewClient
 import com.example.edukasikesehatankejiwaan.MainActivity
+import com.example.edukasikesehatankejiwaan.artikelnew.Arikel
 
 
 class WebActivity : AppCompatActivity() {
@@ -32,7 +33,7 @@ class WebActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        startActivity(Intent(this, ArtikelActivity::class.java))
+        startActivity(Intent(this, Arikel::class.java))
         finish()
     }
 }
