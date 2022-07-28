@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    card_view:cardBackgroundColor="#E6E6E6"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/list_ly1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="nama"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/nama"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="Pengarang"-->
+<!--                    android:textColor="#3F51B5"-->
+<!--                    android:textSize="11dp" />-->
+
+                <TextView
+                    android:id="@+id/nomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nama"
+                    android:layout_marginTop="15dp"
+                    android:text="nomor"
+                    android:textColor="#3F51B5"
+                    android:textSize="11dp" />
+
+            </RelativeLayout>
+
+
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/nik"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/list_ly1"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="9dp"-->
+            <!--                android:text="Nik"-->
+            <!--                android:textSize="17dp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/lokasiLaporan_berjalan"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Status"-->
+            <!--                android:layout_below="@+id/keteranganLaporan"-->
+            <!--                android:textSize="11dp"-->
+            <!--                android:background="#03A9F4"-->
+            <!--                android:textColor="#fff"-->
+            <!--                android:visibility="invisible"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                />-->
+
+            <!--            <TextView-->
+            <!--                android:visibility="invisible"-->
+            <!--                android:id="@+id/lokasiLaporan_selesai"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Status"-->
+            <!--                android:layout_below="@+id/keteranganLaporan"-->
+            <!--                android:textSize="11dp"-->
+            <!--                android:background="#4CAF50"-->
+            <!--                android:textColor="#fff"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                />-->
+
+            <!--            <TextView-->
+            <!--                android:visibility="invisible"-->
+            <!--                android:id="@+id/lokasiLaporan_tunda"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Status"-->
+            <!--                android:layout_below="@+id/keteranganLaporan"-->
+            <!--                android:textSize="11dp"-->
+            <!--                android:background="#F44336"-->
+            <!--                android:textColor="#fff"-->
+            <!--                android:padding="5dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                />-->
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/lokasiLaporan_tidak"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:background="#FF9800"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:text="Status"
+        />
+</androidx.cardview.widget.CardView>

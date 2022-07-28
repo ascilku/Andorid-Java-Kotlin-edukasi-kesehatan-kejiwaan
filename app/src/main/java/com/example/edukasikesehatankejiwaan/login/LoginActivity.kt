@@ -335,10 +335,12 @@ class LoginActivity : AppCompatActivity() {
                         val model_login: ModelLogin = model_logins.get(0)
                         val usernamee: String = model_login.getUsername()
                         val status: String = model_login.getStatus()
+                        val id: String = model_login.getId()
 
                         Toast.makeText(applicationContext, usernamee+ " " +status, Toast.LENGTH_SHORT).show();
                         session_akun?.setIdAkun(usernamee)
                         session_akun?.setIdpassword(status)
+                        session_akun?.setId(id)
                         startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                         finish()
 //                        session_akun.setIdAkses(aksesLogin)

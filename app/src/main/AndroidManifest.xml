@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.edukasikesehatankejiwaan" >
+    package="com.example.edukasikesehatankejiwaan">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -14,7 +14,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EdukasiKesehatanKejiwaan" >
+        android:theme="@style/Theme.EdukasiKesehatanKejiwaan">
+        <activity
+            android:name=".kontak.KontakUser"
+            android:exported="false" />
+        <activity
+            android:name=".newchat.ListOrang"
+            android:exported="false" />
+        <activity
+            android:name=".newchat.NewChat"
+            android:exported="false" />
         <activity
             android:name=".tempat.TambahTempat"
             android:exported="false" />
@@ -29,7 +38,7 @@
             android:exported="false" />
         <activity
             android:name=".login.LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -116,7 +125,7 @@
         <service
             android:name=".fcm.FirebaseMessanging"
             android:exported="false"
-            android:permission="com.google.android.c2dm.permission.SEND" >
+            android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />

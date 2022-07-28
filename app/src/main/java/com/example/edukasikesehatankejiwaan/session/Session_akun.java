@@ -32,6 +32,16 @@ public class Session_akun {
     }
 
 
+    public void setId (String idakun){
+        editor.putString("id", idakun);
+        editor.commit();
+    }
+
+    public String getId () {
+        return pref.getString("id", null);
+    }
+
+
 //    ------------------------------------------
 
 

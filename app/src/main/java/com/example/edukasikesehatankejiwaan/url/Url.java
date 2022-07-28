@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Url {
 //    static  final  String URL = "http://192.168.233.47/";
-    static  final  String URL = "https://6105-125-162-209-82.ap.ngrok.io/";
+    static  final  String URL = "https://2ae8-36-84-58-83.ap.ngrok.io/";
     public static final String BASE_URL = URL+"/edukasi/";
 
     private static Retrofit retrofit = null;

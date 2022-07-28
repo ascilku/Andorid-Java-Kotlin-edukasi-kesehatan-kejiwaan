@@ -14,6 +14,7 @@ import com.example.edukasikesehatankejiwaan.fcm.Token
 import com.example.edukasikesehatankejiwaan.konsul.KonsultasiActivity
 import com.example.edukasikesehatankejiwaan.login.LoginActivity
 import com.example.edukasikesehatankejiwaan.lokasi.LokasiKonsultasi
+import com.example.edukasikesehatankejiwaan.newchat.ListOrang
 import com.example.edukasikesehatankejiwaan.session.Session_akun
 import com.example.edukasikesehatankejiwaan.teleponBantuan.TeleponBantuanActivity
 import com.example.edukasikesehatankejiwaan.utils.Cons.DB
@@ -61,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         b.konsulBK.setOnClickListener {
-            startActivity(Intent(this,  ListUserAct::class.java))
+            startActivity(Intent(this, ListOrang::class.java))
             finish()
         }
         b.logout.setOnClickListener {

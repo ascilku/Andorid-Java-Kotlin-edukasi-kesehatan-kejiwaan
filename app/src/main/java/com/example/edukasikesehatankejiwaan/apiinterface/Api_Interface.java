@@ -3,8 +3,10 @@ package com.example.edukasikesehatankejiwaan.apiinterface;
 
 import com.example.edukasikesehatankejiwaan.artikelnew.Value;
 import com.example.edukasikesehatankejiwaan.artikelnew.ValueTambahArtikel;
+import com.example.edukasikesehatankejiwaan.kontak.ValueKontak;
 import com.example.edukasikesehatankejiwaan.login.ValueLogin;
 import com.example.edukasikesehatankejiwaan.lokasi.ValueLokasi;
+import com.example.edukasikesehatankejiwaan.newchat.ValueUsersChat;
 import com.example.edukasikesehatankejiwaan.tempat.ValueTempat;
 
 import java.util.Map;
@@ -37,6 +39,13 @@ public interface Api_Interface {
 
     @GET("lihatlokasi.php")
     Call<ValueLokasi> getLokasi();
+
+    @GET("lihatUsers.php")
+    Call<ValueKontak> getusersChat();
+
+    @FormUrlEncoded
+    @POST("lihatChat.php")
+    Call<ValueUsersChat> getChat(@Field("id_pemilik") String id_pemilik);
 
     @FormUrlEncoded
     @POST("tambahLokasi.php")
