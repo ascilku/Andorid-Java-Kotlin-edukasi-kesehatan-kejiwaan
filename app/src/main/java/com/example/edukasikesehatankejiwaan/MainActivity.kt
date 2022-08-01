@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import com.example.edukasikesehatankejiwaan.artikel.ArtikelActivity
 import com.example.edukasikesehatankejiwaan.artikelnew.Arikel
@@ -33,7 +34,10 @@ class MainActivity : AppCompatActivity() {
         session_akun = Session_akun(this)
 
         b.akses.text= session_akun!!.getIdpassword()
-
+//        b.konsulBK
+        if (session_akun!!.getIdpassword() == "Admin"){
+            b.konsulBK.visibility = View.INVISIBLE
+        }
         if (prefManager.getUserName(baseContext)?.contains("@gmail.com") == false){
             b.nBk.text = "Message"
         }

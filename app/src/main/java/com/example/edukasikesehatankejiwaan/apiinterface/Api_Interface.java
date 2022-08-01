@@ -6,6 +6,8 @@ import com.example.edukasikesehatankejiwaan.artikelnew.ValueTambahArtikel;
 import com.example.edukasikesehatankejiwaan.kontak.ValueKontak;
 import com.example.edukasikesehatankejiwaan.login.ValueLogin;
 import com.example.edukasikesehatankejiwaan.lokasi.ValueLokasi;
+import com.example.edukasikesehatankejiwaan.newchat.ValueInputChat;
+import com.example.edukasikesehatankejiwaan.newchat.ValueSemuaChat;
 import com.example.edukasikesehatankejiwaan.newchat.ValueUsersChat;
 import com.example.edukasikesehatankejiwaan.tempat.ValueTempat;
 
@@ -56,6 +58,18 @@ public interface Api_Interface {
     @FormUrlEncoded
     @POST("lihatTempat.php")
     Call<ValueTempat> getTempat(@Field("id_lokasi") String id_lokasi);
+
+    @FormUrlEncoded
+    @POST("semuaChat.php")
+    Call<ValueSemuaChat> getSemuaChat(@Field("id_users") String id_users);
+
+    @FormUrlEncoded
+    @POST("inputChat.php")
+    Call<ValueInputChat> inputChat(
+                                        @Field("id_users") String id_users,
+                                        @Field("id_pemilik") String id_pemilik,
+                                        @Field("isi") String isi
+                                  );
 
     @FormUrlEncoded
     @POST("tambahTempat.php")

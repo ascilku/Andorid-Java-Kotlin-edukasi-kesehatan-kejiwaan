@@ -9,4 +9,18 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
 
+
+<!--        <color name="colorPrimary">#008577</color>-->
+<!--        <color name="colorPrimaryDark">#00574B</color>-->
+<!--        <color name="colorAccent">#D81B60</color>-->
+        <color name="biru">#0073A0</color>
+        <color name="abu_abu">#8A8A8A</color>
+        <color name="hijau">#00D423</color>
+        <color name="abu_abu_dua">#E3E3E3</color>
+        <color name="hitam">#000000</color>
+        <color name="putih">#FFFFFF</color>
+        <color name="hijau_pesan">#e2ffc7</color>
+        <color name="waktu">#869b72</color>
+
+
 </resources>

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.edukasikesehatankejiwaan.R;
 import com.example.edukasikesehatankejiwaan.artikel.WebActivity;
 import com.example.edukasikesehatankejiwaan.newchat.ModelUserChat;
+import com.example.edukasikesehatankejiwaan.newchat.NewChat;
 import com.example.edukasikesehatankejiwaan.newchat.RecyclerUserChat;
 import com.example.edukasikesehatankejiwaan.url.Url;
 
@@ -47,6 +48,8 @@ public class RecyclerKontak extends RecyclerView.Adapter<RecyclerKontak.ViewHold
         holder.nomor.setText(model_lap_saya.getStatus());
 //        holder.nomor.setText(model_lap_saya.getStatus());
 //        holder.link = model_lap_saya.getUrl();
+        holder.link = model_lap_saya.getId();
+        holder.nama = model_lap_saya.getUsername();
 
     }
 
@@ -59,7 +62,7 @@ public class RecyclerKontak extends RecyclerView.Adapter<RecyclerKontak.ViewHold
 
         TextView waktuLaporan, jenisLaporan, nomor;
         ImageView fotoLaporan, editLaporanSaya;
-        String link;
+        String link, nama;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -82,8 +85,9 @@ public class RecyclerKontak extends RecyclerView.Adapter<RecyclerKontak.ViewHold
 
 
 //
-            Intent intent = new Intent(context, WebActivity.class);
+            Intent intent = new Intent(context, NewChat.class);
             intent.putExtra("link", link);
+            intent.putExtra("nama", nama);
             itemView.getContext().startActivity(intent);
             ((Activity)itemView.getContext()).finish();
         }

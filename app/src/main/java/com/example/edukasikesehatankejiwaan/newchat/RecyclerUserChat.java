@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,6 +47,9 @@ public class RecyclerUserChat extends RecyclerView.Adapter<RecyclerUserChat.View
 
         holder.nomor.setText(model_lap_saya.getStatus());
         holder.isi.setText(model_lap_saya.getIsi());
+
+        holder.link = model_lap_saya.getId();
+        holder.nama = model_lap_saya.getUsername();
 //        holder.nomor.setText(model_lap_saya.getStatus());
 //        holder.link = model_lap_saya.getUrl();
 
@@ -60,7 +64,7 @@ public class RecyclerUserChat extends RecyclerView.Adapter<RecyclerUserChat.View
 
         TextView waktuLaporan, jenisLaporan, nomor, isi;
         ImageView fotoLaporan, editLaporanSaya;
-        String link;
+        String link, nama;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -84,8 +88,9 @@ public class RecyclerUserChat extends RecyclerView.Adapter<RecyclerUserChat.View
 
 
 //
-            Intent intent = new Intent(context, WebActivity.class);
+            Intent intent = new Intent(context, NewChat.class);
             intent.putExtra("link", link);
+            intent.putExtra("nama", nama);
             itemView.getContext().startActivity(intent);
             ((Activity)itemView.getContext()).finish();
         }
